@@ -1,8 +1,8 @@
 # Carl Wynand du Plessis — Personal Website
 
-Single-page portfolio for Carl Wynand du Plessis, Interim Technical Product Lead.
+Portfolio for Carl Wynand du Plessis, Interim Technical Product Lead. The site is an AWS Amplify Gen 2 app: a React (Vite) frontend with routed case studies, and an Amplify Data backend that stores contact inquiries.
 
-The page is self-contained in `index.html`, including styles and photographs. Client wordmarks load from jsDelivr.
+React (Vite) is the Amplify default for a web app. Case studies are real routes (`/work/yukon`, `/work/tessa`), and the contact form writes to AppSync when the backend is deployed. Amplify Hosting builds the frontend from `amplify.yml` after `npx ampx pipeline-deploy`.
 
 ## Run locally
 
@@ -11,11 +11,29 @@ npm install
 npm run dev
 ```
 
-Then open the URL Vite prints (this project uses port 43123).
+Open the URL Vite prints. This project uses port 43123.
 
-## Still to confirm
+`npm run dev` writes a local `amplify_outputs.json` placeholder if one is missing, so the site renders before a sandbox exists. The contact form needs a real backend. Create one with:
 
-- Résumé URL is not linked yet. Add it in the footer when the file or page is ready.
-- Project Yukon still has no public case-study URL.
-- Confirm the contact email (`carl@deadpointhq.com`) is the address you want on the site.
-- Confirm permission and preferred presentation for the client wordmarks.
+```bash
+AWS_REGION=us-east-1 npx ampx sandbox --once
+```
+
+That command needs AWS credentials and replaces the placeholder. `amplify_outputs.json` is gitignored.
+
+## Deploy with Amplify Hosting
+
+Connect this repository in the Amplify console. The repo includes `amplify.yml`. The backend phase runs `npx ampx pipeline-deploy`, then the frontend builds into `dist`.
+
+Because the app uses client-side routes, add this rewrite in Amplify Hosting (Rewrites and redirects):
+
+- Source: `</^[^.]+$|\.(?!(css|gif|ico|jpg|js|png|txt|svg|woff|woff2|ttf|map|json|webp)$)([^.]+$)/>`
+- Target: `/index.html`
+- Type: `200` (Rewrite)
+
+Without that rule, refreshing `/work/yukon` or `/work/tessa` returns a 404.
+
+## Case studies
+
+- [Project Yukon](/work/yukon) — seller tools consolidated into one Salesforce experience.
+- [Tessa](/work/tessa) — ambient AI caregiving companion, from concept to home pilots.
