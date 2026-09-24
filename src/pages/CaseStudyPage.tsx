@@ -26,11 +26,16 @@ export function CaseStudyPage() {
         <div className="kicker">{study.label}</div>
         <h1>{study.title}</h1>
         <p className="case-lede">{study.lede}</p>
-        <p style={{ marginTop: 28 }}>
+        <div className="hero-links">
           <Link className="text-link" to="/#work">
             ← Selected work
           </Link>
-        </p>
+          {study.siteUrl && (
+            <a className="primary-link" href={study.siteUrl}>
+              {study.siteLabel ?? "Visit the product"} →
+            </a>
+          )}
+        </div>
       </header>
 
       <section className="impact-band" aria-label={`${study.title} outcomes`}>
@@ -100,6 +105,23 @@ export function CaseStudyPage() {
         <figure className="case-photo">
           <img src={study.image} alt={study.imageAlt ?? ""} />
         </figure>
+      )}
+
+      {study.gallery && study.gallery.length > 0 && (
+        <section className="case-gallery" aria-label={`${study.title} product images`}>
+          {study.gallery.map((photo) => (
+            <figure key={photo.src}>
+              <img src={photo.src} alt={photo.alt} />
+              <figcaption>{photo.caption}</figcaption>
+            </figure>
+          ))}
+          {study.siteUrl && (
+            <p className="case-gallery-link">
+              Images from{" "}
+              <a href={study.siteUrl}>{study.siteLabel ?? study.siteUrl}</a>
+            </p>
+          )}
+        </section>
       )}
     </article>
   );

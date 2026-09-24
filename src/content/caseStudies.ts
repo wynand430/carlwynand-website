@@ -5,6 +5,9 @@ export type CaseStudy = {
   lede: string;
   image?: string;
   imageAlt?: string;
+  gallery?: { src: string; alt: string; caption: string }[];
+  siteUrl?: string;
+  siteLabel?: string;
   metrics: { value: string; label: string }[];
   problem: string;
   solution: string;
@@ -75,45 +78,82 @@ export const caseStudies: CaseStudy[] = [
     slug: "tessa",
     label: "Product strategy and delivery",
     title: "Tessa",
-    lede: "An ambient AI companion that helps families stay close to an aging loved one without taking over the home.",
+    lede: "Audio-only urgent alerts for aging parents. No pendant, no button, no camera.",
+    image: "/photos/tessa/urgent-protection-hero.webp",
+    imageAlt: "Family caregiver on the phone after receiving an urgent alert",
+    siteUrl: "https://www.tessalistens.com/",
+    siteLabel: "tessalistens.com",
+    gallery: [
+      {
+        src: "/photos/tessa/listener_home.webp",
+        alt: "Tessa Listener plugged in on a bookshelf",
+        caption: "Plug-in Listener",
+      },
+      {
+        src: "/photos/tessa/device_app_home.webp",
+        alt: "Tessa Listener beside the Tessa Family app",
+        caption: "Listener and family app",
+      },
+      {
+        src: "/photos/tessa/tessa_notification.png",
+        alt: "Example Tessa urgent alert call and notification",
+        caption: "Urgent alert",
+      },
+      {
+        src: "/photos/tessa/family_xl.webp",
+        alt: "Family caring together",
+        caption: "The family who gets the call",
+      },
+      {
+        src: "/photos/tessa/Woman_checking_phone_xl.webp",
+        alt: "Family caregiver checking a phone update",
+        caption: "A check-in, not a feed",
+      },
+      {
+        src: "/photos/tessa/urgent-protection-secondary.webp",
+        alt: "Older parent at home with a blurred urgent phone notification in the foreground",
+        caption: "Heard, not watched",
+      },
+    ],
     metrics: [
-      { value: "6 mo", label: "From concept to live home pilots" },
-      { value: "25", label: "Families wait-listed for the alpha" },
-      { value: "152+", label: "Household sounds the prototype can recognize" },
-      { value: "1", label: "Family app for the signals that matter" },
+      { value: "Audio", label: "No camera, ever. No pendant and no button to press." },
+      { value: "15 min", label: "Alerts are typically sent within 15 minutes of an event." },
+      { value: "5 min", label: "Guided setup in the app. A parent does not need a smartphone." },
+      { value: "$99.99", label: "Plans start here each month, with Tessa Listeners included." },
+      { value: "30 days", label: "Free trial. Month-to-month, cancel anytime." },
     ],
     problem:
-      "Families are placed into caregiving overnight—after an incident, a diagnosis, or a shift where independence turns into concern. They want to know a loved one is okay without calling constantly or installing something that feels like surveillance.",
+      "If something happens at 2am, the family often finds out too late. Pendants get left on the nightstand, wearables are uncharged, and a button still has to be pressed. Typical medical alerts also miss scam calls and distress in the room.",
     solution:
-      "Tessa listens for meaningful events in the home, summarizes what changed, and shares that through a family app. Families choose how much detail they see. Privacy stays intact, and independence stays the point.",
+      "A plug-in Tessa Listener sits in the home and listens for falls, calls for help, and possible scam calls. The family gets a clear urgent alert in the Tessa Family app, with an optional phone call if they are not in the app. Tessa does not replace 911.",
     services: [
-      "Product strategy for an AI-native care product",
-      "Pilot design with families already in the home",
-      "Signal design: urgent alerts, pattern changes, and longer-term context",
-      "A care intelligence view families can actually use",
+      "Product strategy for an audio-only safety product",
+      "The Listener: included hardware, no battery, no camera",
+      "Urgent alerts for falls, distress, and scam calls",
+      "The Tessa Family app, where the people who can check in are notified",
     ],
-    contextTitle: "The product had to earn trust before it earned features.",
+    contextTitle: "Families needed a heads-up that still left dignity intact.",
     context:
-      "Tessa started as a venture inside Fyve Labs and became Fyve Health. The early work was not a feature list. It was conversations with families who wanted a steady signal that someone was okay, and a prototype simple enough to live in a real home. I helped take that from concept to active home trials in six months.",
-    causesTitle: "What the pilots had to prove",
+      "Tessa Listens is built for the moment a parent is home alone and something is wrong. The product had to work whether or not they remembered to wear a device, and it had to refuse the obvious shortcut: a camera. Audio is not a live feed. Event audio is shared only with permission, and data is removed within 30 days.",
+    causesTitle: "Three situations families act on.",
     causesIntro:
-      "The near-term bar was reliability, clarity, and caregiver trust: fewer alerts, more meaning, and effortless control.",
+      "Not every sound becomes an alert. These are the moments the product is designed to catch, then hand to the family.",
     causes: [
       {
-        title: "Useful in a real day",
-        body: "End-to-end prototype testing in active homes, so the team could see what families actually checked.",
+        title: "Possible fall",
+        body: "A sharp impact, and whether the parent calls for help or the room goes quiet. The alert says when it happened and what Tessa noticed.",
       },
       {
-        title: "A signal, not a feed",
-        body: "Sleep changes, missed routines, or distress—summarized, not streamed.",
+        title: "Possible scam call",
+        body: "Pressure patterns and unusual caller behavior, not a transcript of the conversation. The family can check in. No one is listening live.",
       },
       {
-        title: "Privacy as a product decision",
-        body: "Families set the level of detail. Independence is protected on purpose.",
+        title: "Call for help",
+        body: "Cries, shouts, or distress in the room become an urgent alert with enough context to decide whether to call or visit.",
       },
       {
-        title: "A path past the prototype",
-        body: "Mobile app, off-the-shelf hardware, and an API ready for a larger beta cohort.",
+        title: "Heard, not watched",
+        body: "No camera. Consent is required. The parent keeps privacy, and the family stays informed without a permanent record of life at home.",
       },
     ],
   },

@@ -97,10 +97,13 @@ export function HomePage() {
             </div>
           </article>
           <article className="work-card work-card-tessa">
+            <figure className="tessa-device">
+              <img src="/photos/tessa/listener_home.webp" alt="Tessa Listener plugged in on a bookshelf" />
+            </figure>
             <div className="tessa-content">
               <div className="work-label">Product strategy and delivery</div>
               <h3>Tessa</h3>
-              <p>Families are thrown into caregiving overnight. I helped take Tessa, an ambient AI companion, from concept to live home pilots in six months so families can see meaningful daily changes without losing privacy.</p>
+              <p>Audio-only urgent alerts for aging parents. No pendant, no button, and no camera — the family hears about a fall, a call for help, or a possible scam in the Tessa Family app.</p>
               <Link className="text-link" to="/work/tessa">
                 Read the case study →
               </Link>
