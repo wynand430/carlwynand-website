@@ -638,7 +638,7 @@
       display: grid;
       grid-template-columns: 1.28fr .72fr;
       gap: 70px;
-      align-items: end;
+      align-items: start;
       padding-block: 80px;
       border-bottom: 1px solid var(--cw-line);
     }

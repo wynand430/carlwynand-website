@@ -316,8 +316,17 @@
   color: var(--cw-muted);
 }
 
+#carl-portfolio .field-hint {
+  justify-self: start;
+  margin-top: -2px;
+  font-size: 10px;
+  letter-spacing: 0.14em;
+  color: color-mix(in srgb, var(--cw-muted) 80%, transparent);
+}
+
 #carl-portfolio .inquiry-form input,
-#carl-portfolio .inquiry-form textarea {
+#carl-portfolio .inquiry-form textarea,
+#carl-portfolio .inquiry-form select {
   width: 100%;
   padding: 12px 14px;
   border: 1px solid var(--cw-line);
@@ -326,6 +335,25 @@
   font: inherit;
   letter-spacing: 0;
   text-transform: none;
+}
+
+#carl-portfolio .inquiry-check {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 4px;
+  font-size: 13px;
+  letter-spacing: 0;
+  text-transform: none;
+  color: var(--cw-ink);
+}
+
+#carl-portfolio .inquiry-check input {
+  width: 16px;
+  height: 16px;
+  margin: 0;
+  padding: 0;
+  accent-color: var(--cw-accent);
 }
 
 #carl-portfolio .inquiry-form textarea {
