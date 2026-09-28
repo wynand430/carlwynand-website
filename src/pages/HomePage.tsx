@@ -113,9 +113,8 @@ export function HomePage() {
                 <span className="brand-icon" aria-hidden="true" style={{ ["--brand-mask" as string]: "url('https://cdn.jsdelivr.net/npm/simple-icons@16.32.0/icons/southwestairlines.svg')" }} />
                 <span>Southwest</span>
               </div>
-              <div className="client-logo logo-cfa" aria-label="Chick-fil-A">
-                <img className="brand-logo" src="/logos/chick-fil-a.svg" alt="" />
-                <span>Chick-fil-A</span>
+              <div className="client-logo logo-cfa">
+                <img className="brand-logo" src="/logos/chick-fil-a.svg" alt="Chick-fil-A" />
               </div>
             </div>
           </div>
