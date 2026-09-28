@@ -188,10 +188,9 @@ export function HomePage() {
       </section>
 
       <section className="shell contact" id="contact">
-        <div>
+        <div className="contact-copy">
           <div className="kicker">04 · Contact</div>
-          <h2>Tell me what you’re trying to deliver.</h2>
-          <p>A short conversation should be enough to determine whether the initiative needs an interim product lead—and whether I am the right one.</p>
+          <p>Tell me what you’re trying to accomplish. A short followup conversation should be enough to determine if it’s a good fit!</p>
           <p>
             <a className="text-link" href="mailto:carl@deadpointhq.com">
               Email Carl →

@@ -633,12 +633,15 @@
     #carl-portfolio .contact {
 
       display: grid;
-      grid-template-columns: 1.28fr .72fr;
-      gap: 70px;
-      align-items: start;
+      grid-template-columns: minmax(0, 640px);
+      gap: 28px;
+      justify-content: start;
       padding-block: 80px;
       border-bottom: 1px solid var(--cw-line);
     }
+
+    #carl-portfolio .contact .inquiry-form {
+ width: 100%; justify-self: stretch; margin-top: 4px; }
 
     #carl-portfolio .contact h2 {
  margin-top: 24px; }
