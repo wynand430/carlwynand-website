@@ -29,21 +29,9 @@ export function HomePage() {
             <br />
             du Plessis
           </h1>
-          <div className="hero-role">Interim Technical Product Lead</div>
           <p className="hero-statement">
-            I help deliver funded, high-visibility software initiatives by aligning the story, guiding the team, and staying accountable to leadership-selected business outcomes.
+            I help enterprise leaders deliver million dollar outcomes on high-visibility, multi-team software initiatives. I’ve built software as a team of one, lead a team of 10, and managed product organizations delivering 100’s millions in revenue.
           </p>
-          <p className="hero-evidence">
-            I’ve built software as a team of one, led a team of 10, and managed multidisciplinary organizations of more than 50 people.
-          </p>
-          <div className="hero-links">
-            <a className="primary-link" href="#contact">
-              Start a conversation →
-            </a>
-            <a className="text-link" href="#work">
-              See selected work ↓
-            </a>
-          </div>
         </div>
         <figure className="hero-photo">
           <img src="/photos/workshop.jpg" alt="Carl facilitating a product workshop with a cross-functional team" />
@@ -51,25 +39,28 @@ export function HomePage() {
         </figure>
       </section>
 
-      <section className="impact-band" aria-label="Selected project impact">
-        <div className="shell impact-grid">
-          <div className="impact-item">
-            <div className="impact-number">$20M</div>
-            <p>
-              <strong>Budget allocated across six organizations</strong> by driving OKRs, executive workshops, and market research to prioritize more than $100M in potential impact.
-            </p>
-          </div>
-          <div className="impact-item">
-            <div className="impact-number">$33M</div>
-            <p>
-              <strong>Recognized value for SMB sellers</strong> by reaching twice as many leads with 75% greater confidence in qualification through a $3.5M Salesforce initiative.
-            </p>
-          </div>
-          <div className="impact-item">
-            <div className="impact-number">$3M</div>
-            <p>
-              <strong>Business impact from service improvements</strong> including a two-minute reduction in average handle time and a 25% improvement in resolution rate.
-            </p>
+      <section className="roi-banner" aria-label="Return on engagement">
+        <div className="shell">
+          <p className="roi-headline">12 year track record of 5x ROI on every engagement</p>
+          <div className="roi-card">
+            <div className="roi-callout">
+              <div className="impact-number">$20M</div>
+              <p>
+                <strong>Budget allocated across six organizations</strong> by driving OKRs, executive workshops, and market research to prioritize more than $100M in potential impact.
+              </p>
+            </div>
+            <div className="roi-callout">
+              <div className="impact-number">$33M</div>
+              <p>
+                <strong>Recognized value for SMB sellers</strong> by reaching twice as many leads with 75% greater confidence in qualification through a $3.5M Salesforce initiative.
+              </p>
+            </div>
+            <div className="roi-callout">
+              <div className="impact-number">$3M</div>
+              <p>
+                <strong>Business impact from service improvements</strong> including a two-minute reduction in average handle time and a 25% improvement in resolution rate.
+              </p>
+            </div>
           </div>
         </div>
       </section>
