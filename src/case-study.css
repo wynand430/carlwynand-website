@@ -27,7 +27,12 @@
 
 #carl-portfolio .case-metrics .impact-item {
   min-height: 210px;
-  padding: 36px 22px;
+  padding: 36px 18px;
+}
+
+#carl-portfolio .case-metrics .impact-number {
+  font-size: clamp(30px, 2.5vw, 36px);
+  letter-spacing: -0.045em;
 }
 
 #carl-portfolio .case-panel {
@@ -109,6 +114,68 @@
 
 #carl-portfolio .cause p {
   margin-top: 6px;
+}
+
+#carl-portfolio .metric-note {
+  max-width: 760px;
+  padding-bottom: 42px;
+  color: rgba(247, 243, 234, 0.62);
+  font-size: 13px;
+  line-height: 1.55;
+}
+
+#carl-portfolio .case-approach,
+#carl-portfolio .case-results,
+#carl-portfolio .case-lesson {
+  max-width: 860px;
+  padding-bottom: 72px;
+}
+
+#carl-portfolio .case-approach h2,
+#carl-portfolio .case-results h2,
+#carl-portfolio .case-lesson h2 {
+  margin-top: 16px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(32px, 4vw, 46px);
+  line-height: 1.05;
+  letter-spacing: -0.04em;
+  font-weight: 400;
+}
+
+#carl-portfolio .case-approach p,
+#carl-portfolio .case-results p,
+#carl-portfolio .case-lesson p {
+  margin-top: 18px;
+  color: var(--cw-muted);
+  line-height: 1.7;
+}
+
+#carl-portfolio .case-approach .cause-list {
+  margin-top: 28px;
+}
+
+#carl-portfolio .case-highlights {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+  margin-top: 28px;
+}
+
+#carl-portfolio .case-highlights strong {
+  display: block;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(28px, 3vw, 36px);
+  font-weight: 400;
+  letter-spacing: -0.03em;
+  line-height: 1.1;
+}
+
+#carl-portfolio .case-highlights span {
+  display: block;
+  margin-top: 8px;
+  color: var(--cw-muted);
+  font-size: 13px;
+  line-height: 1.45;
 }
 
 #carl-portfolio .case-quote {
@@ -195,6 +262,10 @@
 
 #carl-portfolio .case-gallery-link a {
   border-bottom: 1px solid var(--cw-accent);
+}
+
+#carl-portfolio .yukon-preview + .yukon-preview {
+  margin-top: 84px;
 }
 
 #carl-portfolio .yukon-preview {
@@ -392,8 +463,13 @@
     grid-template-columns: 1fr 1fr;
   }
 
-  #carl-portfolio .yukon-preview {
+  #carl-portfolio .yukon-preview,
+  #carl-portfolio .case-highlights {
     grid-template-columns: 1fr;
+  }
+
+  #carl-portfolio .metric-note {
+    padding-inline: 24px;
   }
 
   #carl-portfolio .inquiry-form {

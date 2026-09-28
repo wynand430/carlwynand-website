@@ -92,6 +92,34 @@ export function HomePage() {
             </div>
           </div>
         </article>
+        <article className="yukon-preview">
+          <div className="yukon-preview-story">
+            <div className="work-label">Enterprise Wi-Fi support</div>
+            <h3>SASHA workflow</h3>
+            <p>$3M estimated annual Tier 1 savings by bringing handle time from 12 minutes to under 9 on a workflow serving up to two million calls a year.</p>
+            <Link className="text-link" to="/work/sasha">
+              Read the case study →
+            </Link>
+          </div>
+          <div className="yukon-preview-card" aria-label="SASHA workflow metrics">
+            <div>
+              <strong>12 → &lt;9</strong>
+              <span>Handle time</span>
+            </div>
+            <div>
+              <strong>800+</strong>
+              <span>Agents</span>
+            </div>
+            <div>
+              <strong>25%</strong>
+              <span>Agent satisfaction</span>
+            </div>
+            <div>
+              <strong>$3M</strong>
+              <span>Annual Tier 1 savings</span>
+            </div>
+          </div>
+        </article>
       </section>
 
       <section className="shell section offer">

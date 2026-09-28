@@ -47,6 +47,7 @@ export function CaseStudyPage() {
             </div>
           ))}
         </div>
+        {study.metricNote && <p className="shell metric-note">{study.metricNote}</p>}
       </section>
 
       <section className="shell case-panel">
@@ -99,6 +100,51 @@ export function CaseStudyPage() {
           <p>“{study.quote.text}”</p>
           <cite>{study.quote.attribution}</cite>
         </blockquote>
+      )}
+
+      {study.approach && (
+        <section className="shell case-approach">
+          <div className="kicker">How the system worked</div>
+          <h2>{study.approach.title}</h2>
+          <p>{study.approach.intro}</p>
+          <div className="cause-list">
+            {study.approach.steps.map((step, index) => (
+              <div className="cause" key={step.title}>
+                <span>{String(index + 1).padStart(2, "0")}</span>
+                <div>
+                  <h3>{step.title}</h3>
+                  <p>{step.body}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </section>
+      )}
+
+      {study.results && (
+        <section className="shell case-results">
+          <div className="kicker">Results</div>
+          <h2>{study.results.title}</h2>
+          {study.highlights && (
+            <div className="case-highlights">
+              {study.highlights.map((item) => (
+                <div key={item.value}>
+                  <strong>{item.value}</strong>
+                  <span>{item.label}</span>
+                </div>
+              ))}
+            </div>
+          )}
+          <p>{study.results.body}</p>
+        </section>
+      )}
+
+      {study.lesson && (
+        <section className="shell case-lesson">
+          <div className="kicker">The product lesson</div>
+          <h2>{study.lesson.title}</h2>
+          <p>{study.lesson.body}</p>
+        </section>
       )}
 
       {study.image && (
