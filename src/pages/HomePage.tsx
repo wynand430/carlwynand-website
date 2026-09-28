@@ -142,18 +142,18 @@ export function HomePage() {
       <section className="about" id="about">
         <div className="shell about-grid">
           <figure className="about-photo">
-            <img src="/photos/slackline.jpg" alt="Carl balancing on a slackline outdoors with a colleague" />
+            <img src="/photos/first-place.jpg" alt="Carl jumping in the snow, holding a first-place sign" />
           </figure>
           <div className="about-copy">
-            <div className="kicker">03 · Beyond the title</div>
-            <h2>Goal-oriented leadership goes beyond the desk.</h2>
-            <p>My excitement for goal-oriented leadership goes beyond the desk. I’m a trail runner, rock climber, and aspiring pianist.</p>
-            <p>Each practice rewards the same things I value in product leadership: a clear goal, steady learning, honest feedback, and the patience to keep moving forward.</p>
-            <div className="about-tags" aria-label="Interests and working preferences">
-              <span className="about-tag">Trail running</span>
-              <span className="about-tag">Rock climbing</span>
-              <span className="about-tag">Piano</span>
-            </div>
+            <div className="kicker">03 · Workflows outside the office</div>
+            <p>My friends say that when I’m around they “lock in” with energy to accomplish goals they’ve been excited about. Maybe it’s because I always ask about why they’re doing what they’re doing, or maybe it’s because I always have a hobby that I’m passionate about. Both share something about how I operate as a person.</p>
+            <p>Once I get excited about something, I always try to get good at it. World class kind of good. This requires committing fully and deeply understanding what I’m doing. This is how I learned to code, how I learned to build products and led to:</p>
+            <ul className="about-list">
+              <li>3hr marathon trail runner</li>
+              <li>v7 rock climber</li>
+              <li>Grade 5 jazz pianist</li>
+              <li>3+ languages above B1 fluency</li>
+            </ul>
           </div>
         </div>
       </section>
