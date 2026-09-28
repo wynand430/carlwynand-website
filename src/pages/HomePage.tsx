@@ -113,7 +113,8 @@ export function HomePage() {
                 <span>Southwest</span>
               </div>
               <div className="client-logo logo-cfa" aria-label="Chick-fil-A">
-                Chick-fil-A
+                <img className="brand-logo" src="/logos/chick-fil-a.svg" alt="" />
+                <span>Chick-fil-A</span>
               </div>
             </div>
           </div>
@@ -121,19 +122,19 @@ export function HomePage() {
         <div className="offer-list">
           <div className="offer-item">
             <strong>Good fit</strong>
-            <p>The initiative is valuable and visible, but ownership is fragmented or the implementation path remains unclear.</p>
+            <p>Projects must have a high-usage workflow that is prioritized with potential business impact. Leadership must be aligned on the business outcomes desired.</p>
           </div>
           <div className="offer-item">
-            <strong>I lead</strong>
-            <p>Outcomes, story, operating cadence, executive decisions, software delivery, measurement, and cross-functional alignment.</p>
+            <strong>Immediate start</strong>
+            <p>30-days to deliver outcomes, executive kick off call, process mapping, and execution plan to deliver 5x ROI</p>
           </div>
           <div className="offer-item">
-            <strong>We finish</strong>
-            <p>With measurable momentum, an aligned delivery system, and an internal owner prepared to carry the work forward.</p>
+            <strong>Approved outcomes</strong>
+            <p>100% approved outcomes from finance and operations teams based on workflow automation impact</p>
           </div>
           <div className="offer-item">
             <strong>Structure</strong>
-            <p>Designed for an 8–12 month engagement, organized in four-month phases with clear decision points and a planned handoff.</p>
+            <p>8-12 month engagement including 30-day guarantee, planned handoff, and bi-weekly executive updates</p>
           </div>
         </div>
       </section>

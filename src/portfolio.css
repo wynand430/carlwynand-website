@@ -530,7 +530,7 @@
     #carl-portfolio .offer-item {
 
       display: grid;
-      grid-template-columns: 108px 1fr;
+      grid-template-columns: 168px 1fr;
       gap: 22px;
       padding: 25px 0;
       border-bottom: 1px solid var(--cw-line);
@@ -590,7 +590,10 @@
  font-size: 17px; font-weight: 500; letter-spacing: -.025em; }
 
     #carl-portfolio .logo-cfa {
- font-family: Georgia, "Times New Roman", serif; font-size: 24px; font-style: italic; font-weight: 500; }
+ font-family: Georgia, "Times New Roman", serif; font-size: 18px; font-style: italic; font-weight: 500; }
+
+    #carl-portfolio .logo-cfa .brand-logo {
+ height: 32px; width: auto; flex: 0 0 auto; }
 
 
     #carl-portfolio .about {
@@ -804,6 +807,12 @@
 
       #carl-portfolio .client-logos {
  grid-template-columns: 1fr 1fr; gap: 22px; }
+
+      #carl-portfolio .logo-cfa {
+ font-size: 16px; gap: 8px; }
+
+      #carl-portfolio .logo-cfa .brand-logo {
+ height: 22px; }
 
       #carl-portfolio .method-item,
       #carl-portfolio .method-item:first-child {
