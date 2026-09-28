@@ -27,7 +27,7 @@ export function HomePage() {
           <h1>
             Carl Wynand
             <br />
-            du Plessis
+            Du plessis
           </h1>
           <p className="hero-statement">
             I help enterprise leaders deliver million dollar outcomes on high-visibility, multi-team software initiatives. I’ve built software as a team of one, lead a team of 10, and managed product organizations delivering 100’s millions in revenue.
