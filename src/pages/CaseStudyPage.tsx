@@ -104,6 +104,7 @@ export function CaseStudyPage() {
       {study.image && (
         <figure className="case-photo">
           <img src={study.image} alt={study.imageAlt ?? ""} />
+          {study.imageCaption && <figcaption className="photo-caption">{study.imageCaption}</figcaption>}
         </figure>
       )}
 

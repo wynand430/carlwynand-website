@@ -134,6 +134,7 @@
 }
 
 #carl-portfolio .case-photo {
+  position: relative;
   margin: 0 42px 80px;
   min-height: 420px;
   overflow: hidden;
@@ -224,6 +225,7 @@
 }
 
 #carl-portfolio .yukon-preview-photo {
+  position: relative;
   margin-top: 28px;
   min-height: 320px;
   overflow: hidden;

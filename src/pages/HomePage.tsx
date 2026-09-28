@@ -25,7 +25,7 @@ export function HomePage() {
         </div>
         <figure className="hero-photo">
           <img src="/photos/workshop.jpg" alt="Carl facilitating a product workshop with a cross-functional team" />
-          <figcaption className="photo-caption">Facilitating a user-experience and product synthesis workshop</figcaption>
+          <figcaption className="photo-caption">Leading an AI accelerator for 50+ product team members</figcaption>
         </figure>
       </section>
 
@@ -70,6 +70,7 @@ export function HomePage() {
             </Link>
             <figure className="yukon-preview-photo">
               <img src="/photos/yukon.jpg" alt="Project Yukon team collaborating during a workshop" />
+              <figcaption className="photo-caption">Facilitating 5-day Google Venture style sprint</figcaption>
             </figure>
           </div>
           <div className="yukon-preview-card" aria-label="Project Yukon metrics">
@@ -143,6 +144,7 @@ export function HomePage() {
         <div className="shell about-grid">
           <figure className="about-photo">
             <img src="/photos/first-place.jpg" alt="Carl jumping in the snow, holding a first-place sign" />
+            <figcaption className="photo-caption">Running in Colorado and setting a half-marathon PR</figcaption>
           </figure>
           <div className="about-copy">
             <div className="kicker">03 · Workflows outside the office</div>

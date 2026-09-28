@@ -5,6 +5,7 @@ export type CaseStudy = {
   lede: string;
   image?: string;
   imageAlt?: string;
+  imageCaption?: string;
   gallery?: { src: string; alt: string; caption: string }[];
   siteUrl?: string;
   siteLabel?: string;
@@ -28,6 +29,7 @@ export const caseStudies: CaseStudy[] = [
     lede: "$34M finance-approved benefit within 9-months for a Salesforce backed seller workflow",
     image: "/photos/yukon.jpg",
     imageAlt: "Project Yukon team collaborating during a workshop",
+    imageCaption: "Facilitating 5-day Google Venture style sprint",
     metrics: [
       { value: "12 → 1", label: "Seller tools consolidated into one primary experience" },
       { value: "83%", label: "Reduction in deal-entry time" },
