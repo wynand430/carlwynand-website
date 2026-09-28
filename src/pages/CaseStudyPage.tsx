@@ -60,9 +60,9 @@ export function CaseStudyPage() {
             <p>{study.solution}</p>
           </div>
           <div className="case-column">
-            <div className="kicker">What I led</div>
+            <div className="kicker">Client profile</div>
             <ul>
-              {study.services.map((item) => (
+              {study.clientProfile.map((item) => (
                 <li key={item}>{item}</li>
               ))}
             </ul>

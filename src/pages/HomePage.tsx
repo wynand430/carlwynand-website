@@ -73,34 +73,37 @@ export function HomePage() {
             <p>Complex initiatives where product direction, technical fluency, and alignment across business and delivery teams changed what became possible.</p>
           </div>
         </div>
-        <div className="work-grid">
-          <article className="work-card work-card-yukon">
-            <figure className="work-image">
+        <article className="yukon-preview">
+          <div className="yukon-preview-story">
+            <div className="work-label">Enterprise product leadership</div>
+            <h3>Project Yukon</h3>
+            <p>$34M finance-approved benefit within 9-months for a Salesforce backed seller workflow.</p>
+            <Link className="text-link" to="/work/yukon">
+              Read the case study →
+            </Link>
+            <figure className="yukon-preview-photo">
               <img src="/photos/yukon.jpg" alt="Project Yukon team collaborating during a workshop" />
             </figure>
-            <div className="work-copy">
-              <div className="work-label">Enterprise product leadership</div>
-              <h3>Project Yukon</h3>
-              <p>A complex enterprise initiative brought into focus through end-to-end workflow mapping, executive alignment, and a product operating system the organization could act on.</p>
-              <Link className="text-link" to="/work/yukon">
-                Read the case study →
-              </Link>
+          </div>
+          <div className="yukon-preview-card" aria-label="Project Yukon metrics">
+            <div>
+              <strong>12 → 1</strong>
+              <span>Tools</span>
             </div>
-          </article>
-          <article className="work-card work-card-tessa">
-            <figure className="tessa-device">
-              <img src="/photos/tessa/listener_home.webp" alt="Tessa Listener plugged in on a bookshelf" />
-            </figure>
-            <div className="tessa-content">
-              <div className="work-label">Product strategy and delivery</div>
-              <h3>Tessa</h3>
-              <p>Audio-only urgent alerts for aging parents. No pendant, no button, and no camera — the family hears about a fall, a call for help, or a possible scam in the Tessa Family app.</p>
-              <Link className="text-link" to="/work/tessa">
-                Read the case study →
-              </Link>
+            <div>
+              <strong>5,000</strong>
+              <span>Sellers</span>
             </div>
-          </article>
-        </div>
+            <div>
+              <strong>83%</strong>
+              <span>Deal time reduction</span>
+            </div>
+            <div>
+              <strong>$34M</strong>
+              <span>Finance-approved benefit</span>
+            </div>
+          </div>
+        </article>
       </section>
 
       <section className="image-method" id="approach">

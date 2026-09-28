@@ -11,7 +11,7 @@ export type CaseStudy = {
   metrics: { value: string; label: string }[];
   problem: string;
   solution: string;
-  services: string[];
+  clientProfile: string[];
   contextTitle: string;
   context: string;
   causesTitle: string;
@@ -25,7 +25,7 @@ export const caseStudies: CaseStudy[] = [
     slug: "yukon",
     label: "Enterprise product leadership",
     title: "Project Yukon",
-    lede: "A unified seller experience that turns any address into a clear path to a deal.",
+    lede: "$34M finance-approved benefit within 9-months for a Salesforce backed seller workflow",
     image: "/photos/yukon.jpg",
     imageAlt: "Project Yukon team collaborating during a workshop",
     metrics: [
@@ -33,17 +33,17 @@ export const caseStudies: CaseStudy[] = [
       { value: "83%", label: "Reduction in deal-entry time" },
       { value: "5,000", label: "Sellers reached through nationwide rollout" },
       { value: "20%", label: "Improvement in qualified lead volume and quality" },
-      { value: "$12M", label: "Estimated business benefit" },
+      { value: "$34M", label: "Finance-approved benefit within 9 months" },
     ],
     problem:
       "B2B sellers depended on 12 disconnected tools, conflicting eligibility data, and a Salesforce process that could take approximately an hour to complete.",
     solution:
       "A single Salesforce-powered experience that turned an address into authoritative eligibility, installation timing, relevant product options, and a ready-to-create deal.",
-    services: [
-      "Product strategy and service design",
-      "Enterprise systems integration",
-      "Custom Salesforce development",
-      "Seller tools consolidated into one primary experience",
+    clientProfile: [
+      "A nationwide B2B sales organization selling fiber, with Salesforce as the system of record for the deal.",
+      "About 5,000 sellers had to leave Salesforce for eligibility, installation timing, and product answers.",
+      "Those answers lived in 12 tools that could disagree about the same address.",
+      "Recording the order itself could take about an hour, so deals waited until the end of the day.",
     ],
     contextTitle: "Selling fiber required sellers to become systems experts.",
     context:
@@ -73,89 +73,6 @@ export const caseStudies: CaseStudy[] = [
       text: "This is the best tool we’ve been given access to. I use it every day, and it makes me feel like the business is investing in how I work.",
       attribution: "Composite paraphrase of recurring feedback from B2B sellers",
     },
-  },
-  {
-    slug: "tessa",
-    label: "Product strategy and delivery",
-    title: "Tessa",
-    lede: "Audio-only urgent alerts for aging parents. No pendant, no button, no camera.",
-    image: "/photos/tessa/urgent-protection-hero.webp",
-    imageAlt: "Family caregiver on the phone after receiving an urgent alert",
-    siteUrl: "https://www.tessalistens.com/",
-    siteLabel: "tessalistens.com",
-    gallery: [
-      {
-        src: "/photos/tessa/listener_home.webp",
-        alt: "Tessa Listener plugged in on a bookshelf",
-        caption: "Plug-in Listener",
-      },
-      {
-        src: "/photos/tessa/device_app_home.webp",
-        alt: "Tessa Listener beside the Tessa Family app",
-        caption: "Listener and family app",
-      },
-      {
-        src: "/photos/tessa/tessa_notification.png",
-        alt: "Example Tessa urgent alert call and notification",
-        caption: "Urgent alert",
-      },
-      {
-        src: "/photos/tessa/family_xl.webp",
-        alt: "Family caring together",
-        caption: "The family who gets the call",
-      },
-      {
-        src: "/photos/tessa/Woman_checking_phone_xl.webp",
-        alt: "Family caregiver checking a phone update",
-        caption: "A check-in, not a feed",
-      },
-      {
-        src: "/photos/tessa/urgent-protection-secondary.webp",
-        alt: "Older parent at home with a blurred urgent phone notification in the foreground",
-        caption: "Heard, not watched",
-      },
-    ],
-    metrics: [
-      { value: "Audio", label: "No camera, ever. No pendant and no button to press." },
-      { value: "15 min", label: "Alerts are typically sent within 15 minutes of an event." },
-      { value: "5 min", label: "Guided setup in the app. A parent does not need a smartphone." },
-      { value: "$99.99", label: "Plans start here each month, with Tessa Listeners included." },
-      { value: "30 days", label: "Free trial. Month-to-month, cancel anytime." },
-    ],
-    problem:
-      "If something happens at 2am, the family often finds out too late. Pendants get left on the nightstand, wearables are uncharged, and a button still has to be pressed. Typical medical alerts also miss scam calls and distress in the room.",
-    solution:
-      "A plug-in Tessa Listener sits in the home and listens for falls, calls for help, and possible scam calls. The family gets a clear urgent alert in the Tessa Family app, with an optional phone call if they are not in the app. Tessa does not replace 911.",
-    services: [
-      "Product strategy for an audio-only safety product",
-      "The Listener: included hardware, no battery, no camera",
-      "Urgent alerts for falls, distress, and scam calls",
-      "The Tessa Family app, where the people who can check in are notified",
-    ],
-    contextTitle: "Families needed a heads-up that still left dignity intact.",
-    context:
-      "Tessa Listens is built for the moment a parent is home alone and something is wrong. The product had to work whether or not they remembered to wear a device, and it had to refuse the obvious shortcut: a camera. Audio is not a live feed. Event audio is shared only with permission, and data is removed within 30 days.",
-    causesTitle: "Three situations families act on.",
-    causesIntro:
-      "Not every sound becomes an alert. These are the moments the product is designed to catch, then hand to the family.",
-    causes: [
-      {
-        title: "Possible fall",
-        body: "A sharp impact, and whether the parent calls for help or the room goes quiet. The alert says when it happened and what Tessa noticed.",
-      },
-      {
-        title: "Possible scam call",
-        body: "Pressure patterns and unusual caller behavior, not a transcript of the conversation. The family can check in. No one is listening live.",
-      },
-      {
-        title: "Call for help",
-        body: "Cries, shouts, or distress in the room become an urgent alert with enough context to decide whether to call or visit.",
-      },
-      {
-        title: "Heard, not watched",
-        body: "No camera. Consent is required. The parent keeps privacy, and the family stays informed without a permanent record of life at home.",
-      },
-    ],
   },
 ];
 
