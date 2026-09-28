@@ -100,6 +100,10 @@ export function HomePage() {
             <Link className="text-link" to="/work/sasha">
               Read the case study →
             </Link>
+            <figure className="yukon-preview-photo">
+              <img src="/photos/sasha.png" alt="Team gathered at a wall of workflow notes" />
+              <figcaption className="photo-caption">Reviewing the support workflow with the team</figcaption>
+            </figure>
           </div>
           <div className="yukon-preview-card" aria-label="SASHA workflow metrics">
             <div>

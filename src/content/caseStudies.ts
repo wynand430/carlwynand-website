@@ -86,6 +86,9 @@ export const caseStudies: CaseStudy[] = [
     label: "Enterprise Wi-Fi support",
     title: "SASHA workflow",
     lede: "$3M estimated annual Tier 1 savings by bringing handle time from 12 minutes to under 9",
+    image: "/photos/sasha.png",
+    imageAlt: "Team gathered at a wall of workflow notes",
+    imageCaption: "Reviewing the support workflow with the team",
     metrics: [
       { value: "800+", label: "Agents working in the workflow" },
       { value: "1–2M", label: "Support calls guided each year" },

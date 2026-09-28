@@ -265,7 +265,9 @@
 }
 
 #carl-portfolio .yukon-preview + .yukon-preview {
-  margin-top: 84px;
+  margin-top: 72px;
+  padding-top: 72px;
+  border-top: 1px solid var(--cw-line);
 }
 
 #carl-portfolio .yukon-preview {
