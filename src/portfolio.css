@@ -314,6 +314,12 @@
     #carl-portfolio .section-header p {
  max-width: 650px; margin-top: 20px; color: var(--cw-muted); line-height: 1.7; }
 
+    #carl-portfolio .work-intro {
+ margin-bottom: 46px; }
+
+    #carl-portfolio .work-intro p {
+ max-width: 650px; margin-top: 14px; color: var(--cw-muted); line-height: 1.7; }
+
 
     #carl-portfolio .work-grid {
 
@@ -536,13 +542,8 @@
     #carl-portfolio .offer-item p {
  color: var(--cw-muted); line-height: 1.62; }
 
-    #carl-portfolio .client-proof {
-
-      grid-column: 1 / -1;
-      margin-top: 18px;
-      padding-top: 44px;
-      border-top: 1px solid var(--cw-line);
-    }
+    #carl-portfolio .offer-copy .client-proof {
+ margin-top: 28px; }
 
     #carl-portfolio .client-proof-label {
  color: var(--cw-muted); font-size: 11px; letter-spacing: .14em; text-transform: uppercase; }
@@ -550,10 +551,10 @@
     #carl-portfolio .client-logos {
 
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
+      grid-template-columns: 1fr 1fr;
       align-items: center;
-      gap: 38px;
-      margin-top: 30px;
+      gap: 22px 28px;
+      margin-top: 18px;
     }
 
     #carl-portfolio .client-logo {
@@ -766,9 +767,6 @@
 
       #carl-portfolio .nav {
  gap: 18px; }
-
-      #carl-portfolio .nav a:nth-child(2) {
- display: none; }
 
       #carl-portfolio .hero h1 {
  font-size: 56px; }

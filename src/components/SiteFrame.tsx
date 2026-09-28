@@ -6,7 +6,6 @@ export function SiteFrame({ children }: { children: ReactNode }) {
     <div id="carl-portfolio" className="editorial image-rich">
       <header className="shell nav">
         <Link to="/#work">Work</Link>
-        <Link to="/#approach">Approach</Link>
         <Link to="/#about">About</Link>
         <Link to="/#contact">Contact</Link>
       </header>
