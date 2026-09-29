@@ -68,6 +68,10 @@ export function InquiryForm() {
 
   return (
     <form className="inquiry-form" onSubmit={onSubmit}>
+      <label className="inquiry-check">
+        <input name="requestNda" type="checkbox" />
+        <span>Request NDA before discussion</span>
+      </label>
       <label>
         Name
         <input name="name" required autoComplete="name" />
@@ -114,10 +118,6 @@ export function InquiryForm() {
       <label>
         Project description
         <textarea name="projectDescription" required placeholder="What are you trying to deliver?" />
-      </label>
-      <label className="inquiry-check">
-        <input name="requestNda" type="checkbox" />
-        <span>Request NDA before discussion</span>
       </label>
       <button className="primary-link" type="submit" disabled={status === "sending"}>
         {status === "sending" ? "Sending…" : "Send the note →"}

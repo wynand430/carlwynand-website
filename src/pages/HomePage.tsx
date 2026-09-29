@@ -32,6 +32,23 @@ export function HomePage() {
       <section className="roi-banner" aria-label="Return on engagement">
         <div className="shell">
           <p className="roi-headline">12 year track record of 5x ROI on every engagement</p>
+          <div className="client-logos" aria-label="Selected organizations">
+            <div className="client-logo logo-hilton" aria-label="Hilton">
+              <span className="brand-icon" aria-hidden="true" style={{ ["--brand-mask" as string]: "url('https://cdn.jsdelivr.net/npm/simple-icons@16.32.0/icons/hiltonhotelsandresorts.svg')" }} />
+              <span>HILTON</span>
+            </div>
+            <div className="client-logo logo-att" aria-label="AT&T">
+              <span className="brand-icon" aria-hidden="true" style={{ ["--brand-mask" as string]: "url('https://cdn.jsdelivr.net/npm/simple-icons@16.32.0/icons/atandt.svg')" }} />
+              <span>AT&T</span>
+            </div>
+            <div className="client-logo logo-southwest" aria-label="Southwest Airlines">
+              <span className="brand-icon" aria-hidden="true" style={{ ["--brand-mask" as string]: "url('https://cdn.jsdelivr.net/npm/simple-icons@16.32.0/icons/southwestairlines.svg')" }} />
+              <span>Southwest</span>
+            </div>
+            <div className="client-logo logo-cfa">
+              <img className="brand-logo" src="/logos/chick-fil-a.svg" alt="Chick-fil-A" />
+            </div>
+          </div>
           <div className="roi-card">
             <div className="roi-callout">
               <div className="impact-number">$20M</div>
@@ -128,45 +145,39 @@ export function HomePage() {
 
       <section className="shell section offer">
         <div className="offer-copy">
-          <div className="kicker">02 · The engagement</div>
-          <p>I step into a funded software initiative, create clarity and momentum with the team already in place, and transfer a durable operating system to an internal product leader.</p>
-          <div className="client-proof">
-            <div className="client-proof-label">Experience includes work with teams at</div>
-            <div className="client-logos" aria-label="Selected organizations">
-              <div className="client-logo logo-hilton" aria-label="Hilton">
-                <span className="brand-icon" aria-hidden="true" style={{ ["--brand-mask" as string]: "url('https://cdn.jsdelivr.net/npm/simple-icons@16.32.0/icons/hiltonhotelsandresorts.svg')" }} />
-                <span>HILTON</span>
-              </div>
-              <div className="client-logo logo-att" aria-label="AT&T">
-                <span className="brand-icon" aria-hidden="true" style={{ ["--brand-mask" as string]: "url('https://cdn.jsdelivr.net/npm/simple-icons@16.32.0/icons/atandt.svg')" }} />
-                <span>AT&T</span>
-              </div>
-              <div className="client-logo logo-southwest" aria-label="Southwest Airlines">
-                <span className="brand-icon" aria-hidden="true" style={{ ["--brand-mask" as string]: "url('https://cdn.jsdelivr.net/npm/simple-icons@16.32.0/icons/southwestairlines.svg')" }} />
-                <span>Southwest</span>
-              </div>
-              <div className="client-logo logo-cfa">
-                <img className="brand-logo" src="/logos/chick-fil-a.svg" alt="Chick-fil-A" />
-              </div>
-            </div>
+          <div>
+            <div className="kicker">02 · The engagement</div>
+            <p>I step into a funded software initiative, create clarity and momentum with the team already in place, and transfer a durable operating system to an internal product leader.</p>
           </div>
+          <div className="kicker">If two or more sound familiar, let’s talk.</div>
         </div>
-        <div className="offer-list">
-          <div className="offer-item">
-            <strong>Good fit</strong>
-            <p>Projects must have a high-usage workflow that is prioritized with potential business impact. Leadership must be aligned on the business outcomes desired.</p>
-          </div>
-          <div className="offer-item">
-            <strong>Immediate start</strong>
-            <p>30-days to deliver outcomes, executive kick off call, process mapping, and execution plan to deliver 5x ROI</p>
-          </div>
-          <div className="offer-item">
-            <strong>Approved outcomes</strong>
-            <p>100% approved outcomes from finance and operations teams based on workflow automation impact</p>
-          </div>
-          <div className="offer-item">
-            <strong>Structure</strong>
-            <p>8-12 month engagement including 30-day guarantee, planned handoff, and bi-weekly executive updates</p>
+        <div className="offer-board">
+          <h2>Need to deliver results within year?</h2>
+          <div className="offer-grid">
+            <article className="offer-cell">
+              <p className="offer-label">Good fit</p>
+              <h3>High-use workflow</h3>
+              <p className="offer-lead">A high-use workflow is creating friction, and leadership is already aligned on the business outcome.</p>
+              <p className="offer-detail">We start with a prioritized workflow and measurable potential business impact.</p>
+            </article>
+            <article className="offer-cell">
+              <p className="offer-label">Immediate start</p>
+              <h3>30 days</h3>
+              <p className="offer-lead">The initiative is funded—but progress has stalled.</p>
+              <p className="offer-detail">Executive kickoff, process mapping, and an execution plan designed to deliver 5x ROI.</p>
+            </article>
+            <article className="offer-cell">
+              <p className="offer-label">Approved outcomes</p>
+              <h3>100%</h3>
+              <p className="offer-lead">Teams are busy, but the impact is not yet approved.</p>
+              <p className="offer-detail">Outcomes approved by finance and operations based on workflow automation impact.</p>
+            </article>
+            <article className="offer-cell">
+              <p className="offer-label">Structure</p>
+              <h3>8–12 months</h3>
+              <p className="offer-lead">The work needs durable ownership—not another short-lived push.</p>
+              <p className="offer-detail">30-day guarantee, planned handoff, and bi-weekly executive updates.</p>
+            </article>
           </div>
         </div>
       </section>

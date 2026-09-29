@@ -1,3 +1,11 @@
+    html {
+      color-scheme: light dark;
+      background: light-dark(#f5f2eb, #171715);
+    }
+
+    body {
+      margin: 0;
+    }
 
     #carl-portfolio {
 
@@ -161,6 +169,30 @@
       text-align: center;
     }
 
+    #carl-portfolio .roi-banner .client-logos {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 18px 48px;
+      max-width: 880px;
+      margin: 28px auto 0;
+    }
+
+    #carl-portfolio .roi-banner .client-logo {
+      min-height: 44px;
+      min-width: 0;
+      color: rgba(247,243,234,.9);
+      filter: none;
+      opacity: 1;
+    }
+
+    #carl-portfolio .roi-banner .logo-cfa .brand-logo {
+      height: 40px;
+      filter: brightness(0) invert(1);
+      opacity: .9;
+    }
+
     #carl-portfolio .roi-card {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -300,7 +332,8 @@
     }
 
     #carl-portfolio .section-header h2,
-    #carl-portfolio .offer-copy h2,
+    #carl-portfolio .offer-board h2,
+    #carl-portfolio .offer-cell h3,
     #carl-portfolio .about-copy h2,
     #carl-portfolio .contact h2 {
 
@@ -513,40 +546,88 @@
     #carl-portfolio .offer {
 
       display: grid;
-      grid-template-columns: .85fr 1.15fr;
-      gap: 74px;
-      align-items: start;
+      grid-template-columns: minmax(220px, .68fr) minmax(0, 1.32fr);
+      gap: 56px 64px;
+      align-items: stretch;
     }
 
-    #carl-portfolio .offer-copy h2 {
- margin-top: 25px; }
+    #carl-portfolio .offer-copy {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 48px;
+      min-height: 100%;
+    }
 
-    #carl-portfolio .offer-copy > p {
- margin-top: 24px; color: var(--cw-muted); line-height: 1.7; }
+    #carl-portfolio .offer-copy p {
+      max-width: 320px;
+      margin-top: 28px;
+      color: var(--cw-muted);
+      line-height: 1.7;
+    }
 
-    #carl-portfolio .offer-list {
- border-top: 1px solid var(--cw-line); }
+    #carl-portfolio .offer-board h2 {
+      max-width: 640px;
+      font-size: clamp(36px, 4.2vw, 54px);
+      line-height: 1.05;
+    }
 
-    #carl-portfolio .offer-item {
-
+    #carl-portfolio .offer-grid {
       display: grid;
-      grid-template-columns: 168px 1fr;
-      gap: 22px;
-      padding: 25px 0;
+      grid-template-columns: 1fr 1fr;
+      margin-top: 28px;
+      border-top: 1px solid var(--cw-line);
+    }
+
+    #carl-portfolio .offer-cell {
+      padding: 26px 28px 8px 0;
       border-bottom: 1px solid var(--cw-line);
     }
 
-    #carl-portfolio .offer-item strong {
- color: var(--cw-accent); font-size: 12px; font-weight: 500; letter-spacing: .1em; text-transform: uppercase; }
+    #carl-portfolio .offer-cell:nth-child(even) {
+      padding-right: 0;
+      padding-left: 28px;
+      border-left: 1px solid var(--cw-line);
+    }
 
-    #carl-portfolio .offer-item p {
- color: var(--cw-muted); line-height: 1.62; }
+    #carl-portfolio .offer-cell:nth-child(n + 3) {
+      border-bottom: 0;
+      padding-bottom: 4px;
+    }
 
-    #carl-portfolio .offer-copy .client-proof {
- margin-top: 28px; }
+    #carl-portfolio .offer-label {
+      color: var(--cw-accent);
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+    }
 
-    #carl-portfolio .client-proof-label {
- color: var(--cw-muted); font-size: 11px; letter-spacing: .14em; text-transform: uppercase; }
+    #carl-portfolio .offer-cell h3 {
+      margin-top: 12px;
+      font-size: clamp(32px, 2.8vw, 42px);
+      font-weight: 400;
+      letter-spacing: -.035em;
+      line-height: 1.05;
+    }
+
+    #carl-portfolio .offer-lead,
+    #carl-portfolio .offer-detail {
+      color: var(--cw-muted);
+      font-size: 15px;
+      line-height: 1.55;
+    }
+
+    #carl-portfolio .offer-lead {
+      margin-top: 16px;
+      padding-bottom: 18px;
+      border-bottom: 1px solid var(--cw-line);
+    }
+
+    #carl-portfolio .offer-detail {
+      margin-top: 16px;
+      margin-bottom: 18px;
+    }
 
     #carl-portfolio .client-logos {
 
@@ -669,7 +750,8 @@
 
     #carl-portfolio:not(.editorial) .hero h1,
     #carl-portfolio:not(.editorial) .section-header h2,
-    #carl-portfolio:not(.editorial) .offer-copy h2,
+    #carl-portfolio:not(.editorial) .offer-board h2,
+    #carl-portfolio:not(.editorial) .offer-cell h3,
     #carl-portfolio:not(.editorial) .about-copy h2,
     #carl-portfolio:not(.editorial) .contact h2,
     #carl-portfolio:not(.editorial) .method-caption strong {
@@ -805,18 +887,30 @@
       #carl-portfolio .how-item p {
  grid-column: 2; }
 
-      #carl-portfolio .client-logos {
- grid-template-columns: 1fr 1fr; gap: 22px; }
+      #carl-portfolio .roi-banner .client-logos {
+ gap: 16px 28px; }
 
-      #carl-portfolio .logo-cfa .brand-logo {
- height: 40px; }
+      #carl-portfolio .logo-cfa .brand-logo,
+      #carl-portfolio .roi-banner .logo-cfa .brand-logo {
+ height: 36px; }
+
+      #carl-portfolio .offer-grid {
+ grid-template-columns: 1fr; }
+
+      #carl-portfolio .offer-cell,
+      #carl-portfolio .offer-cell:nth-child(even),
+      #carl-portfolio .offer-cell:nth-child(n + 3) {
+ padding: 24px 0 8px; border-left: 0; border-bottom: 1px solid var(--cw-line); }
+
+      #carl-portfolio .offer-cell:last-child {
+ border-bottom: 0; }
 
       #carl-portfolio .method-item,
       #carl-portfolio .method-item:first-child {
  grid-row: auto; min-height: 430px; }
 
-      #carl-portfolio .offer-item {
- grid-template-columns: 1fr; gap: 9px; }
+      #carl-portfolio .offer-copy p {
+ max-width: none; }
 
       #carl-portfolio .about-photo,
       #carl-portfolio .about-photo img {

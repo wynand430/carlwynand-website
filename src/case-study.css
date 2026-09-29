@@ -410,23 +410,27 @@
   text-transform: none;
 }
 
-#carl-portfolio .inquiry-check {
+#carl-portfolio .inquiry-form label.inquiry-check {
   display: flex;
+  flex-direction: row;
   align-items: center;
+  justify-content: flex-start;
   gap: 10px;
-  margin-top: 4px;
-  font-size: 13px;
-  letter-spacing: 0;
-  text-transform: none;
+  margin: 0 0 8px;
   color: var(--cw-ink);
 }
 
-#carl-portfolio .inquiry-check input {
+#carl-portfolio .inquiry-form label.inquiry-check input {
   width: 16px;
   height: 16px;
+  flex: 0 0 16px;
   margin: 0;
   padding: 0;
   accent-color: var(--cw-accent);
+}
+
+#carl-portfolio .inquiry-form label.inquiry-check span {
+  line-height: 1.3;
 }
 
 #carl-portfolio .inquiry-form textarea {
