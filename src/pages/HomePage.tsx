@@ -149,7 +149,6 @@ export function HomePage() {
             <div className="kicker">02 · The engagement</div>
             <p>I step into a funded software initiative, create clarity and momentum with the team already in place, and transfer a durable operating system to an internal product leader.</p>
           </div>
-          <div className="kicker">If two or more sound familiar, let’s talk.</div>
         </div>
         <div className="offer-board">
           <h2>Need to deliver results within year?</h2>
